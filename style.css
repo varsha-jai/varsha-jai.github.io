@@ -63,8 +63,8 @@ section {
     border-radius: 14px;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
     max-width: 800px;   /* 👈 key change */
-    text-align: center;
-    text-align-last: justify;
+    text-align: justify;
+    text-align-last: center;
 }
 
 .card:hover {
@@ -74,7 +74,8 @@ section {
 
 .card h2 {
     margin-top: 0;
-    text-align: justify;
+    text-align: center;
+    text-align-last: justify;
     color: #312e81;
 }
 
