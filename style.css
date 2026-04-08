@@ -1,6 +1,5 @@
 body {
     font-family: 'Segoe UI', sans-serif;
-    text-align: justify;
     margin: 0;
     background: #f4f6f9;
     color: #333;
@@ -23,6 +22,7 @@ header h1 {
 header p {
     margin-top: 10px;
     font-size: 1.1rem;
+    text-align: center;
 }
 
 /* Navigation */
@@ -58,13 +58,12 @@ section {
 /* Cards */
 .card {
     background: white;
-    padding: 25px;
+    padding: 25px 30px;
     margin: 20px auto;
     border-radius: 14px;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
-    max-width: 800px;   /* 👈 key change */
-    text-align: justify;
-    text-align-last: center;
+    max-width: 800px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .card:hover {
@@ -72,11 +71,32 @@ section {
     box-shadow: 0 10px 22px rgba(0, 0, 0, 0.12);
 }
 
-.card h2 {
+/* Card headings centered */
+.card h2,
+.card h3 {
     margin-top: 0;
     text-align: center;
-    text-align-last: justify;
     color: #312e81;
+}
+
+/* Card text justified */
+.card p,
+.card li {
+    text-align: justify;
+}
+
+/* Center button rows / link rows */
+.card .button-row,
+.card .link-row,
+#resume p,
+#transcripts p,
+#contact p {
+    text-align: center;
+}
+
+/* Lists */
+.card ul {
+    padding-left: 20px;
 }
 
 /* Buttons */
@@ -84,11 +104,12 @@ section {
     display: inline-block;
     padding: 10px 20px;
     background: #4f46e5;
-    color: white;
+    color: white !important;
     border-radius: 8px;
     text-decoration: none;
     font-weight: bold;
     transition: background 0.2s ease;
+    margin: 5px;
 }
 
 .btn:hover {
@@ -106,7 +127,7 @@ section a:hover {
 
 /* Footer */
 footer {
-    text-align: left;
+    text-align: center;
     padding: 20px;
     background: #111827;
     color: white;
