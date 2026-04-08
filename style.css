@@ -26,7 +26,7 @@ header p {
 
 /* Navigation */
 nav {
-    background: #1f2937;
+    background: #ede9fe;
     text-align: center;
     padding: 14px 10px;
     position: sticky;
@@ -35,17 +35,16 @@ nav {
 }
 
 nav a {
-    color: #e5e7eb;
+    color: #4f46e5;
     margin: 0 15px;
     text-decoration: none;
     font-weight: bold;
     display: inline-block;
     padding: 6px 0;
-    transition: color 0.2s ease;
 }
 
 nav a:hover {
-    color: #c4b5fd;
+    color: #7c3aed;
 }
 
 /* Sections */
