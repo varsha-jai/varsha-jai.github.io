@@ -128,8 +128,12 @@ section a:hover {
 /* Footer */
 footer {
     text-align: center;
-    padding: 20px;
+    padding: 25px 20px;
     background: #111827;
-    color: white;
-    margin-top: 40px;
+    color: #d1d5db;
+    margin-top: 50px;
+    font-size: 0.9rem;
+
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
 }
